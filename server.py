@@ -33,6 +33,9 @@ def send():
     message = conn.recv(1024)
     message = message.decode()
     print(client, ':', message)
+    if message == 'exit':
+        conn.close()
+        sys.exit()
 
 
 while True:
