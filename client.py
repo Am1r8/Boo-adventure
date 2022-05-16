@@ -26,7 +26,7 @@ def send():
     message = (socket_server.recv(1024)).decode()
     print(server_name, ":", message)
     message = input("\nMe : ")
-    socket_server.send(message.encode())  
+    socket_server.send(message.encode())
 
 while True:
     try:
