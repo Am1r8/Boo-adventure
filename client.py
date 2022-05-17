@@ -23,21 +23,15 @@ server_name = server_name.decode()
 print(server_name,' has joined...\n\n')
 
 def send():
-    global f
-    message = (socket_server.recv(1024)).decode()
-    print(server_name, ":", message)
+    # global f
+    # message = (socket_server.recv(1024)).decode()
+    # print(server_name, ":", message)
     message = input("\nMe : ")
     socket_server.send(message.encode())
-    # f = socket_server.recv(1024).decode()
-    # if f == True:
-    #     print("ok")
-    # else:
-    #     send()
 
 while True:
     try:
         send()
-        # if server.k == True:
     except:
         print("there is a Problem in the script!")
         time.sleep(5)
