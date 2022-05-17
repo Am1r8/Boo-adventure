@@ -15,7 +15,7 @@ print("\nThis is your IP: ", s_ip, "\n")
 
 name = input('\nEnter name: ')
 
-new_socket.listen(1) 
+new_socket.listen(1)
 
 
 conn, add = new_socket.accept()
