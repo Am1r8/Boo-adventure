@@ -2,6 +2,8 @@ import time
 import socket
 import sys
 import random
+from time import sleep
+import os
 
 new_socket = socket.socket()
 host_name = socket.gethostname()
@@ -29,8 +31,12 @@ print(client + ' has connected...\n\n')
 conn.send(name.encode())
 rand = random.randint(1,10)
 print("\n\nHello, welcome to adventure op, a game where you can play with your friends on local servers.\n\n")
-print("\n\n Write the first number that you think makes the game start (both of players have to choose the same number, a number between 0-10)\n\n")
+sleep(1)
+print("\n\n Write the first number that you think makes the game start (a number between 0-10)\n\n")
+sleep(1)
 print(".....")
+sleep(5)
+os.system('cls')
 def send():
     # message = input('\nMe : ')
     # conn.send(message.encode())
@@ -64,7 +70,19 @@ def send():
     elif message == "N":
         print("I should call his mom or someone!\nI am calling his mom\n\n**RING RING RING** ......\n Hello miss I was with jack and he is missing what should I do, there is blood in the sink too, I am not sure if its his.\nMam can you hear me?! .........\n\n what's going on with this family?! **LIGHTS GO OUT**\n\n^%^!#(!(**((@&*!#\nJack dude this is not funny I am leaving\n")
         print("Why the door is locked!!!!!!!!!!\n\nNo batteries on my phone too I can't use the flash\n What should I do?\n 14) Break the glass and run\n 15) Stay and figure out what's going on?")
-        
+    elif message == "14":
+        print("\nWhat was that sound I should hurry up and get out of here!\nThe sound is getting closer wtf is going on?!\ndude I should get out!\n\nWhat should I use to brake the window?\nknife\nchair\ndog")
+    elif message == "knife":
+        print("I can't use this choose another option!\n\nWhat should I use to brake the window?\nchair\ndog")
+    elif message == "chair":
+        print("**PAGH PAGH** The windows is broken, runnnnnnnnnnnnnnnn")
+        print("\nYou Won\n")
+        exit()
+    elif message == "dog":
+        print("**Bark Bark Bark** I can't use her, she is gonna die!\nYou are too brutal you lost")
+        exit()
+    elif message == "15":
+        print("Not available now!")
 
 while True:
     try:
