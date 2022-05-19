@@ -91,6 +91,34 @@ def send():
             print("YOU ARE SAFE, YOU WON!")
             sleep(7)
             exit()
+    elif message == "12":
+        print("Jack where are you man?\n\n**PAGH** I am here what's up?\nnothing where were you? I think you went out, the computer is unlocked by the way!\nOh ok thanks.")
+        print("\nno worries man")
+        print("\n\nVery boring ending but you won!")
+        sleep(5)
+        exit()
+    elif message == "13":
+        print("JackKKKKKKKKKKKKKKKKKKKKKKKKK\nJackkkkkkkkkkkkkkkk\n**WHOOF WHOOF** what was that?!\nwhere is that from?\nupstairs\ngarden\nbasement")
+    elif message == "upstairs":
+        print("Ok I am gonna go up, Jack you here?\nhe is not here wrong choice\nWhere should I go?\nbasement\nkitchen\nbedroom")
+    elif message == "basement":
+        print("This place smells so bad, that's because of last night's party, he is not here either\nwhere should I go?\nkitchen\nbedroom\ngarden")
+    elif message == "kitchen":
+        print("I was just here\nwhere should I go?!\nbedroom\ngarden\nupstairs\nbasement")
+    elif message == "bedroom":
+        print("THis place looks neat, I never thought he is a clean guy, god damn\nJack you here? He is not here either\nwhere should I go?!\nkitchen\nbasement\ngarden")
+    elif message == "garden":
+        print("**WHOOF WHOOF**\noh my god oh my god, get away from him, get away from him\nHelp me, help me billy, save me from this dogggggggggg\nI should pick a tool to kill this god!\nlawnmower\nhose\nbbq")
+    elif message == "lawnmower":
+        print("Get away from him dog **PAGH PAGH** You get away from him or I run you over\nOh he is coming for me, no no no no no\nYou are DEAD\ntry again!\nwhat tool should I use?!\nhose\nbbq")
+    elif message == "hose":
+        print("That's what I am talking about, get away, yeah run away.\nJack you are bleeding, I am calling 911, you are gonna be ok, ok?")
+        print("YOU WON, NICE ENDING")
+        sleep(5)
+        exit()
+    elif message == "bbq":
+        print("who do you think I am, superman? my friend is dying, I should save him with another tool\nYou know what, you lost because this is not even funny my guy\nYOU LOST DUE TO NOT BEING SMART!")
+        exit()
 
 while True:
     try:
