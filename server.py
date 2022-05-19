@@ -37,6 +37,7 @@ sleep(1)
 print(".....")
 sleep(5)
 os.system('cls')
+r = 0
 def send():
     # message = input('\nMe : ')
     # conn.send(message.encode())
@@ -82,7 +83,14 @@ def send():
         print("**Bark Bark Bark** I can't use her, she is gonna die!\nYou are too brutal you lost")
         exit()
     elif message == "15":
-        print("Not available now!")
+        print("Jack where are you dude?!\nThis is not funny at all. (what was that sound, it was from basement) **PAGH** **TURNS ON THE LIGHT**\nYou here? I'm gonna kill you if I find you! **GASP** what is that?!!!!!!!!!!!!!!\n\n(RUN RUN)\nbreak the window with a chair and run!")
+        print("Press 'r' as much as you can!")
+    elif message == "r":
+        r += 1
+        if r == 10:
+            print("YOU ARE SAFE, YOU WON!")
+            sleep(7)
+            exit()
 
 while True:
     try:
