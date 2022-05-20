@@ -1,7 +1,8 @@
 import time
 import socket
-import sys
+import os
 
+os.system('cls')
 socket_server = socket.socket()
 server_host = socket.gethostname()
 
@@ -23,9 +24,6 @@ server_name = server_name.decode()
 print(server_name,' has joined...\n\n')
 
 def send():
-    # global f
-    # message = (socket_server.recv(1024)).decode()
-    # print(server_name, ":", message)
     message = input("\nMe : ")
     socket_server.send(message.encode())
 
