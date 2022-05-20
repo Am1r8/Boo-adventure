@@ -5,6 +5,7 @@ import random
 from time import sleep
 import os
 
+os.system('cls')
 new_socket = socket.socket()
 host_name = socket.gethostname()
 s_ip = socket.gethostbyname(host_name)
@@ -38,10 +39,8 @@ print(".....")
 sleep(10)
 os.system('cls')
 r = 0
+
 def send():
-    # message = input('\nMe : ')
-    # conn.send(message.encode())
-    # lol = message
     message = conn.recv(1024)
     message = message.decode()
     print(rand, message)
@@ -157,4 +156,5 @@ while True:
     except:
         print("there is a Problem in the script!")
         time.sleep(5)
+        os.system('cls')
         exit()
