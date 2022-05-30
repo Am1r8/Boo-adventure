@@ -68,9 +68,6 @@ def send():
         print("What should I do now?\n\njack where did you go\n\n(He is probably in the kitchen)")
         print("\n\ndid you cut your hand? there is blood in the sink! What should I do?!\n 11) call 911\n 12) clean the blood it's probally from last nights cake\n 13) Scream Jack")
         sleep(1)
-    elif message != str(2022-19):
-        print("How do you guess that wrong???\nWe are roommates for 4 years now!\nTry A")
-        sleep(1)
     elif message == str(11):
         print("**RING RING**\nWhy they are not picking up?!\nLet me call again\n**RING RING**\nNo answer what should I do?!\n\n should I clean the blood with a rag? (Y/N)\n\n")
         sleep(1)
