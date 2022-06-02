@@ -70,7 +70,7 @@ def send():
         sleep(1)
     elif message == str(11):
         print("**RING RING**\nWhy they are not picking up?!\nLet me call again\n**RING RING**\nNo answer what should I do?!\n\n should I clean the blood with a rag? (Y/N)\n\n")
-        sleep(1)
+        sleep(1
     elif message == "Y":
         print("I Should clean this off and go home I don't want to deal with this guy jokes!\n\n")
         sleep(1)
